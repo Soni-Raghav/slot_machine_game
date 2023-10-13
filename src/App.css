@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.header{
+    display: flex;
+    justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* for container outer box */
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* for gameBox display i.e 111  */
+.gameBox{
+    display: flex;
+    justify-content: space-around;
+    border:2px solid green;
+    align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* for gameDigits display */
+.gameDisp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:100px;
 }
-
-.App-link {
-  color: #61dafb;
+#gdisp1,#gdisp2,#gdisp3{
+    margin: 6px 4px;
+    border: 1px dashed red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gamePlay > button{
+    font-size: 1.5rem;
+    background-color: rgb(17, 221, 95);
+    border: 2px solid white;
+    color: white;
+    font-weight: 900;
+    padding: 0.4em;
+    border-radius: 0.5em;
+}
+.footer{
+    display: flex;
+   
+    justify-content: center;
+    align-items: flex-end;
 }
